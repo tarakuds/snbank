@@ -23,3 +23,28 @@ while action:
     if Login == "login":
      username =input("Username: ")
      password =input("Password: ")
+
+     checkIn = input("To CREATE NEW BANK ACCOUNT type-> new" + "\n" + "To CHECK ACCOUNT BALANCE type-> balance \n"+"To LOGOUT type-> logout \n")
+     activity = True
+
+    while activity:
+        if checkIn == "new":
+            account_name = input("Account Name: ")
+            account_balance = input("Account Balance: ")
+            account_type = input("Account Type: ")
+            account_email = input("Account email: ")
+            account_number = print("Account Number: ")
+
+        elif checkIn == "balance":
+            account_number = input("What is your Account Number: ")
+
+        elif checkIn == "logout":
+            print("lets go again")
+            breakpoint()
+
+
+
+
+    if Login == "close":
+        print("Thank you for using this app.")
+        break
