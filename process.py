@@ -33,7 +33,13 @@ while action:
             account_balance = input("Account Balance: ")
             account_type = input("Account Type: ")
             account_email = input("Account email: ")
-            account_number = print("Account Number: ")
+            account_number = input("Account Number: ")
+
+
+            f=open("customer.txt", "w")
+            f.write(account_number)
+
+            f.close()
 
         elif checkIn == "balance":
             account_number = input("What is your Account Number: ")
