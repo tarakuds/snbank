@@ -36,13 +36,14 @@ while action:
             account_number = input("Account Number: ")
 
 
-            f=open("customer.txt", "w")
+            f=open("customer.txt", "a")
             f.write(account_number)
-
             f.close()
 
         elif checkIn == "balance":
             account_number = input("What is your Account Number: ")
+            f = open("customer.txt", "r")
+            print(f.read())
 
         elif checkIn == "logout":
             print("lets go again")
