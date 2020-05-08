@@ -13,3 +13,13 @@ f.write(staffDetails2)
 f.close()
 
 f = open("customer.txt", "w")
+
+print("Welcome to the SN Banking App \n ")
+Login = input("To LOGIN type-> login" + "\n" +"To CLOSE type-> close \n")
+# print("To CLOSE type-> close \n")
+action = True
+
+while action:
+    if Login == "login":
+     username =input("Username: ")
+     password =input("Password: ")
